@@ -32,10 +32,12 @@ console.log(typeof kolaKaka, typeof kakPris, typeof finnsLager, typeof x, typeof
 // TODO: skapa en string, ett number, en boolean, en undefined och en null
 //       Typerna heter string, number, boolean, undefined och null
 // TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma)
-// TODO: prova att ge number-variabeln en text. Vad säger TypeScript? TypesCript säger: string string boolean undefined object
+// TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
+// SVAR: TypesCript säger: string string boolean undefined object
 
 const summa = antalBullar * prisBulle + antalKaffe * prisKaffe;
-console.log("Summa: " + summa + " kr." + " Varav moms (12%):" + " kr");
+const momsDel = (summa * 0.12) / 1.12;
+console.log("Summa: " + summa + " kr." + " Varav moms (12%):" + momsDel.toFixed(2) + " kr");
 
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
@@ -43,6 +45,7 @@ console.log("Summa: " + summa + " kr." + " Varav moms (12%):" + " kr");
 // TODO: skriv ut "Summa: ... kr" och "Varav moms (12 %): ... kr"
 //       Moms ska ha två decimaler (toFixed(2))
 //       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
+// SVAR: number | undefined): string
 
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
