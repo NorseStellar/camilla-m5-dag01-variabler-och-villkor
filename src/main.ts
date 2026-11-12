@@ -1,10 +1,17 @@
 // Dag 1: Variabler, typer och villkor. Följ README.md steg för steg.
 // Resultatet syns i Console (F12). Spara, så laddas sidan om av sig själv.
 // Röda understrykningar i VS Code är TypeScript som varnar. Håll musen över dem och läs.
-
+console.log("Hej från Kafé Kardemumma");
 // STEG 1 ------------------------------------------------------------
 // TODO: skriv ut texten "Hej från Kafé Kardemumma" med console.log
+const kafeNamn = "Kafé Kardemumma";
+const prisBulle = 35;
+const prisKaffe = 32;
 
+let antalBullar = 2;
+let antalKaffe = 1;
+
+console.log(kafeNamn);
 
 // STEG 2 ------------------------------------------------------------
 // TODO: skapa konstanten kafeNamn (string) med värdet "Kafé Kardemumma"
@@ -13,13 +20,22 @@
 // TODO: skriv ut kafeNamn
 //       Skriv typen själv, till exempel:  const kafeNamn: string = "..."
 
+const kolaKaka: string = "Kolakaka";
+const kakPris: number = "15";
+const finnsLager: boolean = true;
+let x: undefined = undefined;
+const y: null = null;
+
+console.log(typeof kolaKaka, typeof kakPris, typeof finnsLager, typeof x, typeof y);
 
 // STEG 3 ------------------------------------------------------------
 // TODO: skapa en string, ett number, en boolean, en undefined och en null
 //       Typerna heter string, number, boolean, undefined och null
 // TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma)
-// TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
+// TODO: prova att ge number-variabeln en text. Vad säger TypeScript? TypesCript säger: string string boolean undefined object
 
+const summa = antalBullar * prisBulle + antalKaffe * prisKaffe;
+console.log("Summa: " + summa + " kr." + " Varav moms (12%):" + " kr");
 
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
@@ -28,17 +44,14 @@
 //       Moms ska ha två decimaler (toFixed(2))
 //       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
 
-
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
 // TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
-
 
 // STEG 6 ------------------------------------------------------------
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
-
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
