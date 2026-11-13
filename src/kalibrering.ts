@@ -1,50 +1,67 @@
-for (let i = 1; i <= 5; i++) {
-   console.log(i);
-}
-
-console.log("Hejsan");
-
-// --- Upppgift 1 ---
-const mittNamn = "Camilla";
-console.log(mittNamn);
-
-// --- Uppgift 2 ---
-// const tal1 = 10;
-// // const tal2 = 20;
-// const tal2 = 50;
-// const tal3 = 25;
-// console.log(tal1 + tal2 + tal3);
-
-// --- Uppgift 3 ---
-// if (tal3 > tal2) {
-//    console.log(tal3 + " är större än " + tal2);
-// } else {
-//    console.log("Talet " + tal3 + " är mindre än " + tal2);
+// for (let i = 1; i <= 5; i++) {
+//    console.log(i);
 // }
 
-// --- Uppgift 4 ---
-const tal1 = 1;
-const tal2 = 2;
-const tal3 = 3;
-const tal4 = 4;
-const tal5 = 5;
+// // --- for-of-loop ---
+// const priser = [35, 32, 59, 45];
+// console.log(priser.length);
+// console.log(priser[0]);
+// for (const pris of priser) {
+//    console.log(pris);
+// }
 
-const tal = [tal1, tal2, tal3, tal4, tal5];
+// console.log("Hejsan");
 
-for (let i = 0; i < tal.length; i++) {
-   console.log("Tal: " + tal[i]);
+// // --- Upppgift 1 ---
+// const mittNamn = "Camilla";
+// console.log(mittNamn);
+
+// // --- Uppgift 2 ---
+// // const tal1 = 10;
+// // // const tal2 = 20;
+// // const tal2 = 50;
+// // const tal3 = 25;
+// // console.log(tal1 + tal2 + tal3);
+
+// // --- Uppgift 3 ---
+// // if (tal3 > tal2) {
+// //    console.log(tal3 + " är större än " + tal2);
+// // } else {
+// //    console.log("Talet " + tal3 + " är mindre än " + tal2);
+// // }
+
+// // --- Uppgift 4 ---
+// const tal1 = 1;
+// const tal2 = 2;
+// const tal3 = 3;
+// const tal4 = 4;
+// const tal5 = 5;
+
+// const tal = [tal1, tal2, tal3, tal4, tal5];
+
+// for (let i = 0; i < tal.length; i++) {
+//    console.log("Tal: " + tal[i]);
+// }
+
+// // --- Uppgift 4 med namn ---
+// const namn1 = "Ellie";
+// const namn2 = "Minna";
+// const namn3 = "Lucas";
+// const namn4 = "Albin";
+
+// const namn = [namn1, namn2, namn3, namn4];
+
+// for (let i = 0; i < namn.length; i++) {
+//    console.log(namn[i]);
+// }
+
+// --- Uppgift 5 ---
+function dubbla(tal: number): number {
+   return tal * 2;
 }
 
-// --- Uppgift 4 med namn ---
-const namn1 = "Ellie";
-const namn2 = "Minna";
-const namn3 = "Lucas";
-const namn4 = "Albin";
-
-const namn = [namn1, namn2, namn3, namn4];
-
-for (let i = 0; i < namn.length; i++) {
-   console.log(namn[i]);
+for (let i: number = 1; i <= 5; i++) {
+   console.log(dubbla(i));
 }
 
 // // --- Test med if och else ---

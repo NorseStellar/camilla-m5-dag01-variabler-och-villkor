@@ -9,7 +9,7 @@ Du behöver inte skriva några typer i kalibreringen. Vanlig JavaScript fungerar
 1. Skapa en variabel med ditt förnamn och skriv ut den.
 2. Skapa två variabler med varsitt tal och skriv ut summan.
 3. Skriv en `if`-sats som skriver ut "Stort" om ett tal är större än 10, annars "Litet".
-4. Skriv en loop som skriver ut talen 1 till 5. (Vet du inte hur? Skriv "vet inte".)
-5. Skriv en funktion som tar emot ett tal och returnerar talet gånger två. (Vet du inte hur? Skriv "vet inte".)
+4. Skriv en loop som skriver ut Skriv en funktion som tar emot ett tal och returnerar talet gånger två.talen 1 till 5. (Vet du inte hur? Skriv "vet inte".)
+5. (Vet du inte hur? Skriv "vet inte".)
 
 Gör `git add .`, `git commit -m "Kalibrering"` och `git push` när tiden är slut.
