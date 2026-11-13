@@ -1,3 +1,5 @@
+import "./kalibrering";
+
 // Dag 1: Variabler, typer och villkor. Följ README.md steg för steg.
 // Resultatet syns i Console (F12). Spara, så laddas sidan om av sig själv.
 // Röda understrykningar i VS Code är TypeScript som varnar. Håll musen över dem och läs.
@@ -66,6 +68,48 @@ console.log(`Att betala: ${attBetala} kr.`);
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
+
+// Start Test nr 1:
+// Skapa veckodag och klockslag
+let veckodag = "lördag";
+let klockslag = 15;
+
+// Avgör om kaféet är öppet
+let oppet =
+   (veckodag !== "lördag" && veckodag !== "söndag" && klockslag >= 7 && klockslag < 18) ||
+   ((veckodag === "lördag" || veckodag === "söndag") && klockslag >= 9 && klockslag < 16);
+
+// Skriv ut resultatet
+console.log("Öppet just nu: " + (oppet ? "ja" : "nej"));
+
+// Slut på test nr 1.
+
+// // Test nr 2. if och else
+// // Skapa veckodag och klockslag
+// let veckodag = "lördag";
+// let klockslag = 15;
+
+// // Avgör om kaféet är öppet
+// let oppet = false;
+
+// if (veckodag === "lördag" || veckodag === "söndag") {
+//    // Helger: öppet 9–16
+//    if (klockslag >= 9 && klockslag < 16) {
+//       oppet = true;
+//    }
+// } else {
+//    // Vardagar: öppet 7–18
+//    if (klockslag >= 7 && klockslag < 18) {
+//       oppet = true;
+//    }
+// }
+
+// // Skriv ut resultatet
+// if (oppet) {
+//    console.log("Öppet just nu: ja");
+// } else {
+//    console.log("Öppet just nu: nej");
+// }
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
